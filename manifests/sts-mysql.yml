@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mysql
+  labels:
+    
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      
+  serviceName: mysql
+  template:
+    metadata:
+      labels:
+        
+    spec:
+      containers:
+      - image: 
+        name: mysql
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            
+        ports:
+        - containerPort: 3306
+          name: mysql
+        volumeMounts:
+        
+  volumeClaimTemplates:
+  - metadata:
+      name: mysql-data
+    spec:
+      accessModes:
+      storageClassName:
+      resources:
+        requests:
+          storage:

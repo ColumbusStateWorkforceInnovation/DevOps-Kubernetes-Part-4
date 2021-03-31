@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 
+  labels:
+    app: 
+    component: 
+    
+spec:
+  replicas: 
+  selector:
+    matchLabels:
+      
+  strategy:
+    
+  template:
+    metadata:
+      labels:
+        
+    spec:
+      containers:
+      - image: 
+        name: wordpress
+        env:
+        - name: WORDPRESS_DB_HOST
+          
+        - name: WORDPRESS_DB_PASSWORD
+        
+        ports:
+        
+          
+        volumeMounts:
+        
+      volumes:
+      - name: wordpress
+        
+        
