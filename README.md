@@ -1,5 +1,6 @@
 # Infrastructure Automation Kubernetes Lab 6/7
 
+Examples for this week's content can be found [here](https://github.com/ColumbusStateWorkforceInnovation/infrastructure-kubernetes-week3-examples)
 
 ## Objectives
 
