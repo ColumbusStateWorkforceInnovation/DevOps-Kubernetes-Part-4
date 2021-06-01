@@ -61,10 +61,8 @@ In the `manifests` directory you will find the manifest files you will have to u
 - use the image `mysql:5.6`
 - Should have a volume mount using volume claim
 - 'standard' storage class with 'ReadWriteOnce' access
-- the mysql instance will need two env variables
-  - WORDPRESS_DB_HOST (the value of this should be 'mysql')
-  - WORDPRESS_DB_PASSWORD (this this value of this should be the secret you created before) 
-    - *hint* use secretKeyRef
+- This StatefulSet will need to use the MYSQL_ROOT_PASSWORD environment variable
+  - *hint* use secretKeyRef
     
 
 #### Service
@@ -88,6 +86,10 @@ In the `manifests` directory you will find the manifest files you will have to u
 - *2* replicas using the `wordpress:4.9-apache` image
 - will need a volumemount at `/var/www/html`
 - this volume used for this volumemount should be the named persistent volume claim you made 
+- the mysql instance will need two env variables
+  - WORDPRESS_DB_HOST (the value of this should be 'mysql')
+  - WORDPRESS_DB_PASSWORD (this this value of this should be the secret you created before) 
+    - *hint* use secretKeyRef
   
 #### Service
 - Expose our wordpress instance using a `NodePort`
