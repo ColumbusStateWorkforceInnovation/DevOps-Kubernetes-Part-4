@@ -11,7 +11,7 @@ You will use all what we have learned in the previous weeks to create a wordpres
 ---
 ## Getting Started and Lab info:
 
-1 - Copy the starter code from here into a new, private repository in your personal GitHub account. When adding a collaborator, be sure to add me ("cscc-luke-rouker").
+1 - Copy the starter code from here into a new, private repository in your personal GitHub account. When adding a collaborator, be sure to add the instructor ("CSCC-Instructor").
 
 Make sure to have gone through the material for helm (lectures/slides) before starting the lab.
 
