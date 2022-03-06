@@ -1,4 +1,4 @@
-# Infrastructure Automation Kubernetes Lab 6/7
+# Infrastructure Automation Kubernetes Lab #3
 
 ## Resources
 
@@ -95,7 +95,7 @@ In [dep-wordpress.yml](./manifests/dep-wordpress.yml):
 Use the persistent volume claim you created in the previous step for the volume.
 
 
-#### Service
+### WordPress Service
 
 In [svc-wordpress.yml](./manifests/svc-wordpress.yml):
 - Label it as described above.
@@ -106,6 +106,8 @@ In [svc-wordpress.yml](./manifests/svc-wordpress.yml):
 ## Checking your work
 
 Use the `minikube service` command to access the deployment when everything is running. First, you should see the WordPress setup screens. Next, go through the setup process. Once you have completed the setup, log in and make sure you get to the WordPress dashboard.
+
+__Don't forget to delete everything including the PVC and secret once you are done testing and are ready to submit your work.__
 
 ---
 
