@@ -107,6 +107,8 @@ In [svc-wordpress.yml](./manifests/svc-wordpress.yml):
 
 Use the `minikube service` command to access the deployment when everything is running. First, you should see the WordPress setup screens. Next, go through the setup process. Once you have completed the setup, log in and make sure you get to the WordPress dashboard.
 
+**TIP:** Once you login to WordPress, the service will bounce you from pod to pod and you may see the login screen multiple times. To prevent this, update [svc-wordpress.yml](./manifests/svc-wordpress.yml) to have a `sessionAffinity` of `ClientIP`. Once you add this property, reapply the file to reconfigure the service.
+
 __Don't forget to delete everything including the PVC and secret once you are done testing and are ready to submit your work.__
 
 ---
